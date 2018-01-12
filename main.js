@@ -2,6 +2,9 @@ function Jukebox() {
     this.song = null;
     this.isPlaying = false;
 
+    this.songEnded = function(){
+        return song.ended;
+    }
     this.play = function() {
         song.play();
         this.isPlaying = true;
@@ -70,6 +73,9 @@ function rotateFunction(recordElem){
     recordElem.style.transform = "rotate(" +degrees+ "deg)";
     degrees++;
     degrees = degrees%360;
+
+    if(jb.songEnded())
+        stopTheRecord();
 }
 
 // Stops the record div from spinning
