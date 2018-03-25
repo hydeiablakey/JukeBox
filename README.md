@@ -1,7 +1,7 @@
 Jukebox-Project
 =====
 This was a group project that was meant to create a jukebox where the user can play predetermined music. 
-This project utilizes HTML, CSS and JS. The user can play, pause and stop music. 
+This project utilizes HTML, CSS and JS. The user can play, pause and stop music. There is also a spinning record as the music plays. 
 
 Usage 
 -----
